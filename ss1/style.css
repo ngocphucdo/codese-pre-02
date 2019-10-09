@@ -1,0 +1,10 @@
+.bg-image {
+    background: url(https://allaboutkpopgirlgroups.files.wordpress.com/2016/11/momoland-bboom-bboom-nancy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.mau {
+    color: red
+}
