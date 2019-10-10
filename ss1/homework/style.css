@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    background: black;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container,
+.nav-links {
+    display: flex;
+}
+
+.logo {
+    font-weight: 500;
+    margin: 5px;
+    font-size: 120%;
+}
+
+.logo-container {
+    flex: 1;
+}
+
+.nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    color: whitesmoke;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+nav {
+    flex: 1;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.intro {
+    font-family: 'PT Serif', serif;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: 2px solid rgba(0, 0, 0, .87);
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+        typing 5s steps(23, end),
+        blink-caret 1s step-end infinite;
+    font-size: 60px;
+
+}
+
+/* The typing effect */
+@keyframes typing {
+    0% {
+        width: 0
+    }
+
+    100% {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    0%,
+    100% {
+        border-color: rgba(0, 0, 0, 0);
+    }
+
+    50% {
+        border-color: rgba(0, 0, 0, .87);
+    }
+}
+
+
+.intro-text {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.cover {
+    flex: 1;
+    overflow: hidden;
+}
+
+.img-zoom {
+    height: 100%;
+    transition: transform 200ms linear;
+}
+
+.img-zoom:hover {
+    transform: scale(1.25);
+}
+
+.cover img {
+    height: 90vh;
+}
+
+.cta {
+    padding-top: 20px;
+    margin-left: 100px;
+}
+
+.cta-select {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 200;
+    padding: 20px;
+    border-radius: 100px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+
+}
+
+.cta-select:hover {
+    color: white !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, white);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, white);
+    transition: all 0.3s ease 0s;
+}
+
+.progress {
+    cursor: progress;
+}
+
+.text-none {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 120%;
+}
