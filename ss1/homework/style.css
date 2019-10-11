@@ -18,11 +18,6 @@ header {
     align-items: center;
 }
 
-.logo-container,
-.nav-links {
-    display: flex;
-}
-
 .logo {
     font-weight: 500;
     margin: 5px;
@@ -36,6 +31,7 @@ header {
 .nav-links {
     justify-content: space-around;
     list-style: none;
+    display: flex;
 }
 
 .nav-link {
@@ -63,15 +59,10 @@ nav {
 .intro {
     font-family: 'PT Serif', serif;
     overflow: hidden;
-    /* Ensures the content is not revealed until the animation */
     border-right: 2px solid rgba(0, 0, 0, .87);
-    /* The typwriter cursor */
     white-space: nowrap;
-    /* Keeps the content on a single line */
     margin: 0 auto;
-    /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em;
-    /* Adjust as needed */
     animation:
         typing 5s steps(23, end),
         blink-caret 1s step-end infinite;
@@ -79,7 +70,6 @@ nav {
 
 }
 
-/* The typing effect */
 @keyframes typing {
     0% {
         width: 0
@@ -90,7 +80,6 @@ nav {
     }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
 
     0%,
@@ -144,6 +133,29 @@ nav {
 
 }
 
+.btn {
+    border: none;
+    background: #404040;
+    color: #ffffff !important;
+    font-weight: 200;
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+    margin-top: 15px;
+
+}
+
+.btn:hover {
+    color: white !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    background: none;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, white);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, white);
+    transition: all 0.3s ease 0s;
+}
+
 .cta-select:hover {
     color: white !important;
     font-weight: 700 !important;
@@ -162,4 +174,304 @@ nav {
     text-decoration: none;
     color: whitesmoke;
     font-size: 120%;
+}
+
+.container {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 100px;
+}
+
+.skills {
+    text-align: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.html {
+    width: 33%;
+    border-radius: 100px;
+    background-color: grey;
+}
+
+.css {
+    width: 50%;
+    border-radius: 100px;
+    background-color: grey;
+}
+
+.js {
+    width: 15%;
+    background-color: grey;
+    border-radius: 100px;
+
+}
+
+.php {
+    width: 20%;
+    background-color: grey;
+    border-radius: 100px;
+
+}
+
+.section-skills {
+
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    border-radius: 100px;
+
+}
+
+.personal-skills {
+    font-size: 150%;
+    margin: 30px;
+    text-align: center;
+}
+
+.folio {
+    font-size: 150%;
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 50px;
+}
+
+.sec-folio {
+    display: inline;
+    width: 95%;
+    margin: auto;
+    align-items: center;
+
+}
+
+.img-folio {
+    width: 250px;
+    margin: 40px;
+    margin-left: 60px;
+    flex: 1;
+}
+
+.address {
+    display: inline;
+
+    flex: 1;
+}
+
+.follow {
+    display: inline;
+    flex: 1;
+}
+
+
+.sec-contact {
+    display: flex;
+    width: 60%;
+    min-height: 45vh;
+    margin: auto;
+}
+
+.div-address {
+    text-align: center;
+    font-weight: 200;
+    font-size: 120%;
+}
+
+.div-follow {
+    text-align: center;
+    font-weight: 200;
+    font-size: 120%;
+}
+
+.content-address form {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 130%;
+}
+
+.fas {
+    font-size: 18px;
+}
+
+.form-control {
+    width: 150px;
+    border-radius: 5px;
+}
+
+textarea {
+    width: 175px;
+    border-radius: 5px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.btn {
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 400;
+}
+
+.sub-div-follow {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+.icon-media {
+    font-size: 200%;
+    margin-top: -20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.fab {
+    margin: 30px;
+    margin-left: 40px;
+}
+
+.thankyou {
+    min-height: 5vh;
+    text-align: center;
+    margin: 20px;
+}
+
+.anim {
+    opacity: 0;
+}
+
+@keyframes anim1 {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Buzz Out */
+@-webkit-keyframes hvr-buzz-out {
+    10% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    20% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    40% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg);
+    }
+
+    70% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg);
+    }
+
+    80% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg);
+    }
+
+    90% {
+        -webkit-transform: translateX(1px) rotate(0);
+        transform: translateX(1px) rotate(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-1px) rotate(0);
+        transform: translateX(-1px) rotate(0);
+    }
+}
+
+@keyframes hvr-buzz-out {
+    10% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    20% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+
+    30% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+
+    40% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+
+    50% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg);
+    }
+
+    60% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg);
+    }
+
+    70% {
+        -webkit-transform: translateX(2px) rotate(1deg);
+        transform: translateX(2px) rotate(1deg);
+    }
+
+    80% {
+        -webkit-transform: translateX(-2px) rotate(-1deg);
+        transform: translateX(-2px) rotate(-1deg);
+    }
+
+    90% {
+        -webkit-transform: translateX(1px) rotate(0);
+        transform: translateX(1px) rotate(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(-1px) rotate(0);
+        transform: translateX(-1px) rotate(0);
+    }
+}
+
+.hvr-buzz-out {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+
+.hvr-buzz-out:hover,
+.hvr-buzz-out:focus,
+.hvr-buzz-out:active {
+    -webkit-animation-name: hvr-buzz-out;
+    animation-name: hvr-buzz-out;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
 }
