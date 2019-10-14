@@ -1,0 +1,48 @@
+body {
+  width: 100%;
+  color: white;
+  font-size: 20px;
+}
+
+.top {
+  background: green;
+  height: 50px;
+}
+.second {
+  background: blue;
+  height: 30px;
+}
+.left {
+  background: red;
+  float: left;
+  height: 400px;
+  width: 60%;
+}
+.right {
+  background: grey;
+  height: 400px;
+  float: right;
+  width: 40%;
+}
+.under {
+  background: black;
+
+  float: left;
+  line-height: 100%;
+}
+.footer {
+  background: lightblue;
+  height: 80px;
+  float: left;
+  width: 100%;
+}
+li {
+  display: inline-block;
+  margin: 2px 50px 0 50px;
+}
+
+.second ul {
+  margin: 0px;
+  /* padding: 0px; */
+  margin-left: 22%;
+}
