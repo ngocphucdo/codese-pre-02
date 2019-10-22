@@ -1,236 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="css/hover-min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="" />
+    <script src="https://kit.fontawesome.com/bd75115cda.js"></script>
+    <title>ngocphucdo | this is my portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="style.css" />
-  <link href="css/hover-min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=PT+Serif&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="">
-  <script src="https://kit.fontawesome.com/bd75115cda.js"></script>
-  <title>ngocphucdo | this is my portfolio</title>
-</head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <h5 class="logo" style="margin-top: 10px">Codese - Homework</h5>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a class="nav-link hvr-buzz-out" href="#about">About</a></li>
+          <li><a class="nav-link hvr-buzz-out" href="#skills">Skills</a></li>
+          <li><a class="nav-link hvr-buzz-out" href="#folio">Folio</a></li>
+          <li><a class="nav-link hvr-buzz-out" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<body>
-  <header>
-    <div class="logo-container">
-      <h5 class="logo" style="margin-top: 10px">Codese - Homework</h5>
-    </div>
-    <nav>
-      <ul class="nav-links">
-        <li><a class="nav-link hvr-buzz-out" href="#about">About</a></li>
-        <li><a class="nav-link hvr-buzz-out" href="#skills">Skills</a></li>
-        <li><a class="nav-link hvr-buzz-out" href="#folio">Folio</a></li>
-        <li><a class="nav-link hvr-buzz-out" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+      <!-- section About -->
+      <section id="about" class="presentation">
+        <div class="introduction">
+          <div>
+            <h1 class="intro">ngoc phuc do</h1>
+          </div>
+          <div class="intro-text anim" data-delay=".5s">
+            <p>Based in Ha Noi, I'm a web developer and so so ...</p>
+          </div>
+          <div class="cta">
+            <button
+              style="width: 260px !important;"
+              class="cta-select progress"
+            >
+              <a class="text-none" href="https://www.instagram.com/ngocphucdo/"
+                >wanna hang out sometime ?</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="cover">
+          <img
+            class="img-zoom"
+            src="/img/Adjustments.plist.jpeg"
+            alt="me myself and i"
+          />
+        </div>
+      </section>
+      <hr id="skills" />
 
-  <main>
-    <!-- section About -->
-    <section id="about" class="presentation">
-      <div class="introduction">
+      <!-- section Skills -->
+
+      <section class="section-skills">
+        <div class="personal-skills">
+          <p>PERSONAL SKILLS</p>
+        </div>
         <div>
-          <h1 class="intro">ngoc phuc do</h1>
-        </div>
-        <div class="intro-text anim" data-delay=".5s">
-          <p>Based in Ha Noi, I'm a web developer and so so ...</p>
-        </div>
-        <div class="cta">
-          <button style="width: 260px !important;" class="cta-select progress">
-            <a class="text-none" href="https://www.instagram.com/ngocphucdo/">wanna hang out sometime ?</a>
-          </button>
-        </div>
-      </div>
-      <div class="cover">
-        <img class="img-zoom" src="/img/Adjustments.plist.jpeg" alt="me myself and i" />
-      </div>
-    </section>
-    <hr id="skills">
-
-    <!-- section Skills -->
-
-    <section class="section-skills">
-      <div class="personal-skills">
-        <p>PERSONAL SKILLS</p>
-      </div>
-      <div>
-        <p style="margin: 10px;">HTML</p>
-        <div class=" container anim" data-delay="0.2s">
-          <div class="skills html">33%</div>
-        </div>
-
-        <p style="margin: 10px;">CSS</p>
-        <div class="container anim" data-delay="0.4s">
-          <div class="skills css">50%</div>
-        </div>
-
-        <p style="margin: 10px;">Java-JavaScript</p>
-        <div class="container anim" data-delay="0.6s">
-          <div class="skills js">15%</div>
-        </div>
-
-        <p style="margin: 10px;">Python-PHP</p>
-        <div class="container anim" data-delay="0.8s">
-          <div class="skills php">20%</div>
-        </div>
-      </div>
-    </section>
-    <br><br><br>
-    <hr id="folio">
-
-    <!-- section Folio -->
-    <section>
-      <div class=" folio">
-        <p>FOLIO</p>
-      </div>
-      <div class="anim" data-delay="0.2s">
-        <section class="sec-folio">
-          <img class="img-folio" src="img/img-folio/nike1.jpg" alt="">
-        </section>
-        <section class="sec-folio">
-          <img class="img-folio" src="/img/img-folio/31412220_121655812035121_6623026264070422528_n.jpg" alt="">
-        </section>
-        <section class="sec-folio">
-          <img class="img-folio" src="/img/img-folio/21911130_134959010386160_1410392806748323840_n.jpg" alt="">
-        </section>
-        <section class="sec-folio">
-          <img class="img-folio" src="/img/img-folio/25036554_145952712670002_147013479251836928_n.jpg" alt="">
-        </section>
-      </div>
-      <div class="anim" data-delay="0.2s">
-        <section class="sec-folio">
-          <img class="img-folio" src="/img/img-folio/26286173_2131216530431899_4999259915848515584_n.jpg" alt="">
-        </section>
-        <section class="sec-folio">
-          <img class="img-folio" src="/img/img-folio/33559743_384628618686710_1225831112782118912_n.jpg" alt="">
-        </section>
-        <section class="sec-folio">
-          <img class="img-folio" src="/img/img-folio/69905617_142677173625748_8172239460650714244_n.jpg" alt="">
-        </section>
-        <section class="sec-folio">
-          <img class="img-folio" src="img/img-folio/59895620_134045301025248_5577141161015282584_n.jpg" alt="">
-        </section>
-      </div>
-      <div class="anim" data-delay="0.2s">
-        <section class="sec-folio">
-          <img class="img-folio" src="img/img-folio/58604286_135066054238584_484147170478652868_n.jpg" alt="">
-        </section>
-        <section class="sec-folio">
-          <img class="img-folio" src="/img/img-folio/nike2.jpg" alt="">
-        </section>
-        <section class="sec-folio">
-          <img class="img-folio" src="img/img-folio/43914584_551335221994398_4893300593585834012_n.jpg" alt="">
-        </section>
-        <section class="sec-folio">
-          <img class="img-folio" src="/img/img-folio/12547166_1699597673618721_1555495750_n.jpg" alt="">
-        </section>
-      </div>
-    </section>
-    <br>
-    <hr id="contact">
-    <!-- section Contact -->
-    <section>
-      <div class="folio">
-        <p>CONTACT</p>
-      </div>
-      <div class="sec-contact anim" data-delay="0.4s">
-        <section class="address">
-          <div class="div-address">
-            <h3><u>Have something to say?</u></h3>
+          <p style="margin: 10px;">HTML</p>
+          <div class=" container anim" data-delay="0.2s">
+            <div class="skills html">33%</div>
           </div>
-          <div class="content-address">
-            <form action="https://formspree.io/taken.jb@gmail.com" method="POST">
-              <div class="row mb-3">
-                <div class="col">
-                  <div><span><i class="fas fa-user-astronaut" style="margin-left: 3px !important;"></i></span>
-                    <input class="form-control" type="text" name="name" placeholder="Name" required="required">
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-3" style="margin-left: 6px !important;">
-                <div class="col">
-                  <div><span><i class="fas fa-file-signature"></i></span>
-                    <input class="form-control" type="text" name="subject" placeholder="Subject" required="required"
-                      style="margin-right: 3px !important; width: 147px !important; height: 17px !important;">
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-3" style="margin-left: 4px !important;">
-                <div class="col">
-                  <div><span><i class="fas fa-at"></i></span>
-                    <input class="form-control" type="text" name="email" placeholder="Email" required="required"
-                      style="margin-right: 2px !important;">
-                  </div>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col">
-                  <div class="form-group">
-                    <textarea class="" name="message" placeholder="Your Message" required="required"></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <button class="btn" type="submit">Sent me</button>
-              </div>
-            </form>
+
+          <p style="margin: 10px;">CSS</p>
+          <div class="container anim" data-delay="0.4s">
+            <div class="skills css">50%</div>
           </div>
-        </section>
-        <div style="border-left:1px solid white;height:250px"></div>
-        <section class="follow anim" data-delay="0.8s">
-          <div class="div-follow">
-            <h3><u>Follow me on social media</u></h3>
+
+          <p style="margin: 10px;">Java-JavaScript</p>
+          <div class="container anim" data-delay="0.6s">
+            <div class="skills js">15%</div>
           </div>
-          <div class="sub-div-follow">
-            <span>
-              <h4>Address</h4> 173, Ngoc Hoi, Hoang Liet, Hoang Mai, Ha Noi
-            </span>
-            <span>
-              <h4>Telephone</h4> 0986280613
-            </span>
+
+          <p style="margin: 10px;">Python-PHP</p>
+          <div class="container anim" data-delay="0.8s">
+            <div class="skills php">20%</div>
           </div>
-          <div class="sub-div-follow">
-            <div class="icon-media">
-              <a href="https://www.facebook.com/taken.jb"> <i class="fab fa-facebook"></i></a>
-              <a href="https://www.instagram.com/ngocphucdo/"> <i class="fab fa-instagram"></i></a>
-              <a href="https://github.com/ngocphucdo"><i class="fab fa-github"></i></a>
+        </div>
+      </section>
+      <br /><br /><br />
+      <hr id="folio" />
+
+      <!-- section Folio -->
+      <section>
+        <div class=" folio">
+          <p>FOLIO</p>
+        </div>
+        <div class="anim" data-delay="0.2s">
+          <section class="sec-folio">
+            <img class="img-folio" src="img/img-folio/nike1.jpg" alt="" />
+          </section>
+          <section class="sec-folio">
+            <img
+              class="img-folio"
+              src="/img/img-folio/31412220_121655812035121_6623026264070422528_n.jpg"
+              alt=""
+            />
+          </section>
+          <section class="sec-folio">
+            <img
+              class="img-folio"
+              src="/img/img-folio/21911130_134959010386160_1410392806748323840_n.jpg"
+              alt=""
+            />
+          </section>
+          <section class="sec-folio">
+            <img
+              class="img-folio"
+              src="/img/img-folio/25036554_145952712670002_147013479251836928_n.jpg"
+              alt=""
+            />
+          </section>
+        </div>
+        <div class="anim" data-delay="0.2s">
+          <section class="sec-folio">
+            <img
+              class="img-folio"
+              src="/img/img-folio/26286173_2131216530431899_4999259915848515584_n.jpg"
+              alt=""
+            />
+          </section>
+          <section class="sec-folio">
+            <img
+              class="img-folio"
+              src="/img/img-folio/33559743_384628618686710_1225831112782118912_n.jpg"
+              alt=""
+            />
+          </section>
+          <section class="sec-folio">
+            <img
+              class="img-folio"
+              src="/img/img-folio/69905617_142677173625748_8172239460650714244_n.jpg"
+              alt=""
+            />
+          </section>
+          <section class="sec-folio">
+            <img
+              class="img-folio"
+              src="img/img-folio/59895620_134045301025248_5577141161015282584_n.jpg"
+              alt=""
+            />
+          </section>
+        </div>
+        <div class="anim" data-delay="0.2s">
+          <section class="sec-folio">
+            <img
+              class="img-folio"
+              src="img/img-folio/58604286_135066054238584_484147170478652868_n.jpg"
+              alt=""
+            />
+          </section>
+          <section class="sec-folio">
+            <img class="img-folio" src="/img/img-folio/nike2.jpg" alt="" />
+          </section>
+          <section class="sec-folio">
+            <img
+              class="img-folio"
+              src="img/img-folio/43914584_551335221994398_4893300593585834012_n.jpg"
+              alt=""
+            />
+          </section>
+          <section class="sec-folio">
+            <img
+              class="img-folio"
+              src="/img/img-folio/12547166_1699597673618721_1555495750_n.jpg"
+              alt=""
+            />
+          </section>
+        </div>
+      </section>
+      <br />
+      <hr id="contact" />
+      <!-- section Contact -->
+      <section>
+        <div class="folio">
+          <p>CONTACT</p>
+        </div>
+        <div class="sec-contact anim" data-delay="0.4s">
+          <section class="address">
+            <div class="div-address">
+              <h3><u>Have something to say?</u></h3>
             </div>
-          </div>
-        </section>
-      </div>
-    </section>
-    <hr>
-    <!-- section tks -->
-    <section>
-      <div class="anim" data-delay="1s">
-        <h1 class="thankyou">Thank you for coming here.</h1>
-      </div>
-    </section>
-  </main>
+            <div class="content-address">
+              <form
+                action="https://formspree.io/taken.jb@gmail.com"
+                method="POST"
+              >
+                <div class="row mb-3">
+                  <div class="col">
+                    <div>
+                      <span
+                        ><i
+                          class="fas fa-user-astronaut"
+                          style="margin-left: 3px !important;"
+                        ></i
+                      ></span>
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="name"
+                        placeholder="Name"
+                        required="required"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3" style="margin-left: 6px !important;">
+                  <div class="col">
+                    <div>
+                      <span><i class="fas fa-file-signature"></i></span>
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="subject"
+                        placeholder="Subject"
+                        required="required"
+                        style="margin-right: 3px !important; width: 147px !important; height: 17px !important;"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3" style="margin-left: 4px !important;">
+                  <div class="col">
+                    <div>
+                      <span><i class="fas fa-at"></i></span>
+                      <input
+                        class="form-control"
+                        type="text"
+                        name="email"
+                        placeholder="Email"
+                        required="required"
+                        style="margin-right: 2px !important;"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col">
+                    <div class="form-group">
+                      <textarea
+                        class=""
+                        name="message"
+                        placeholder="Your Message"
+                        required="required"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <button class="btn" type="submit">Sent me</button>
+                </div>
+              </form>
+            </div>
+          </section>
+          <div style="border-left:1px solid white;height:250px"></div>
+          <section class="follow anim" data-delay="0.8s">
+            <div class="div-follow">
+              <h3><u>Follow me on social media</u></h3>
+            </div>
+            <div class="sub-div-follow">
+              <span>
+                <h4>Address</h4>
+                173, Ngoc Hoi, Hoang Liet, Hoang Mai, Ha Noi
+              </span>
+              <span>
+                <h4>Telephone</h4>
+                0986280613
+              </span>
+            </div>
+            <div class="sub-div-follow">
+              <div class="icon-media">
+                <a href="https://www.facebook.com/taken.jb">
+                  <i class="fab fa-facebook"></i
+                ></a>
+                <a href="https://www.instagram.com/ngocphucdo/">
+                  <i class="fab fa-instagram"></i
+                ></a>
+                <a href="https://github.com/ngocphucdo"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <hr />
+      <!-- section tks -->
+      <section>
+        <div class="anim" data-delay="1s">
+          <h1 class="thankyou">Thank you for coming here.</h1>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script>
+    const images = document.querySelectorAll(".anim");
+    observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.intersectionRatio > 0) {
+          entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
+        } else {
+          entry.target.style.animation = "none";
+        }
+      });
+    });
 
-</body>
-<script>
-  const images = document.querySelectorAll('.anim');
-
-  observer = new IntersectionObserver((entries) => {
-
-    entries.forEach(entry => {
-      if (entry.intersectionRatio > 0) {
-        entry.target.style.animation = `anim1 2s ${entry.target.dataset.delay} forwards ease-out`;
-      } else {
-        entry.target.style.animation = 'none';
-      }
-    })
-
-  })
-
-  images.forEach(image => {
-    observer.observe(image)
-  })
-</script>
-
+    images.forEach(image => {
+      observer.observe(image);
+    });
+  </script>
 </html>
