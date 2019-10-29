@@ -1,15 +1,21 @@
-const a = 10;
-const b = 6;
-tong = a + b;
-
-// cach1
-function tinhTong1(a, b) {
-    console.log("a + b = ", tong);
+// ex2
+function tong1(a, b) {
+    return a + b;
 }
-tinhTong1(a, b);
 
-// cach2
-tinhTong2 = function (a, b) {
-    console.log("a + b = ", tong);
-}
-tinhTong2();
+let tong2 = function (a, b) {
+    return a + b;
+};
+
+// ECMA Script 6
+let tong3 = (a, b) => {
+    // Arrow Function
+    return a + b;
+};
+
+let tong4 = (a, b) => ({
+    tenham: "tong",
+    ketqua: a + b
+});
+
+console.log(tong4(4, 5))
