@@ -14,12 +14,20 @@ app.engine("handlebars", handlebars({
 app.set("view engine", "handlebars");
 
 app.get('/', (req, res) => {
-    let data = fs.readFileSync('data.json', 'utf8');
-    let objData = JSON.parse(data);
-    let question = objData[Math.floor(Math.random() * objData.length)];
-    res.render("mainPage", {
-        cauhoi: question.questionContent
-    })
+    let data
+    try {
+        data = JSON.parse(fs.readFile("data.json"))
+    } catch (error) {
+        data = [{
+            questionContent: "Khong co cau hoi nao"
+        }]
+    } finally {
+        let question = data[Math.floor(Math.random() * data.length)];
+        res.render("mainPage", {
+            cauhoi: question.questionContent
+        })
+    }
+
 });
 
 app.get('/ask', (req, res) => {
@@ -61,6 +69,7 @@ app.post('/ask', (req, res) => {
             }
         })
     }
+
 })
 
 
@@ -71,3 +80,7 @@ app.listen(3000, err => {
         console.log("app listening at port 3000");
     }
 });
+
+// MVC, MVVM, MVP - Java  
+// redux = reduce _ flux
+// flux, jsx  js + xml 
