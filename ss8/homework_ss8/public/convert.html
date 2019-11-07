@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<title>Feet to Meters Length Converter</title>
+
+<body align='center'>
+    <h2>Length Converter</h2>
+    <table border="1px" align="center">
+        <tr>
+            <th>input</th>
+            <th>result</th>
+
+        </tr>
+        <tr>
+            <td>
+                <label>Milimet</label>
+                <input id="inputMilimet" type="number" placeholder="mili" oninput="LengthConverter1(this.value)"
+                    onchange="LengthConverter(this.value)">
+            </td>
+            <td>
+                Milimet: <span id="outputMilimet"></span> (mm)
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Centimet</label>
+                <input id="inputCentimet" type="number" placeholder="centi" oninput="LengthConverter2(this.value)"
+                    onchange="LengthConverter(this.value)">
+            </td>
+            <td>
+                Centimet: <span id="outputCentimet"></span> (cm)
+            </td>
+        </tr>
+        <tr>
+            <td><label>Decimet</label>
+                <input id="inputDecimet" type="number" placeholder="deci" oninput="LengthConverter3(this.value)"
+                    onchange="LengthConverter(this.value)"></td>
+            <td>Decimet: <span id="outputDecimet"></span> (dm) </td>
+        </tr>
+        <tr>
+            <td><label>Met</label>
+                <input id="inputMet" type="number" placeholder="m" oninput="LengthConverter4(this.value)"
+                    onchange="LengthConverter(this.value)"></td>
+            <td>Met: <span id="outputMet"></span> (m) </td>
+        </tr>
+    </table>
+
+    <script>
+        function LengthConverter1(valNum) {
+            document.getElementById("outputMilimet").innerHTML = valNum * 1;
+            document.getElementById("outputCentimet").innerHTML = valNum * 10;
+            document.getElementById("outputDecimet").innerHTML = valNum * 100;
+            document.getElementById("outputMet").innerHTML = valNum * 1000;
+        }
+
+        function LengthConverter2(valNum) {
+            document.getElementById("outputMilimet").innerHTML = valNum / 10;
+            document.getElementById("outputCentimet").innerHTML = valNum * 1;
+            document.getElementById("outputDecimet").innerHTML = valNum * 10;
+            document.getElementById("outputMet").innerHTML = valNum * 100;
+        }
+
+        function LengthConverter3(valNum) {
+            document.getElementById("outputMilimet").innerHTML = valNum / 100;
+            document.getElementById("outputCentimet").innerHTML = valNum / 10;
+            document.getElementById("outputDecimet").innerHTML = valNum * 1;
+            document.getElementById("outputMet").innerHTML = valNum * 10;
+        }
+
+        function LengthConverter4(valNum) {
+            document.getElementById("outputMilimet").innerHTML = valNum / 1000;
+            document.getElementById("outputCentimet").innerHTML = valNum / 100;
+            document.getElementById("outputDecimet").innerHTML = valNum / 10;
+            document.getElementById("outputMet").innerHTML = valNum * 1;
+        }
+    </script>
+</body>
+
+</html>
