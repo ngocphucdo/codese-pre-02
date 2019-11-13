@@ -1,8 +1,11 @@
-Đăng nhập đi
-<form action="/login" method="post">
+Login please !
+
+{{loginStatus}}
+
+<form action="/" method="post">
     username:
-    <input type="text" name="account" id="account" value=""> <br>
+    <input type="text" name="account" id="" value="" required> <br>
     password
-    <input type="password" name="pw" id="pw" value=""><br>
+    <input type="password" name="pw" id="" value="" required><br>
     <button type="submit">Enter</button>
 </form>
